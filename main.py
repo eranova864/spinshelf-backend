@@ -21,11 +21,4 @@ def calculate(
     levels: int = Form(...)
 ):
     price = diameter * height * levels * 0.1
-    return f"""
-    <h2>Calculated price</h2>
-    <p>Diameter: {diameter}</p>
-    <p>Height: {height}</p>
-    <p>Levels: {levels}</p>
-    <strong>Price: {price:.2f}</strong><br><br>
-    <a href="/">Back</a>
-    """
+    return f"<h2>Price: {price:.2f}</h2><a href='/'>Back</a>"
